@@ -1,25 +1,20 @@
 #include <iostream>
 #include <string>
+#include "board.cpp"
 
 using namespace std;
 
+
+
 int main(){
 	
-	char chess[16][16];
+	Board spaces;
 	
-	for(int i; i=0; i<16; i++){
-		
-		for(int j; j=0; j<16; j++){
-				chess[i][j] = '-';
-		}
-	}
+	spaces.setup();
+	spaces.print();
+	spaces.choice();
+	spaces.reveal();
 	
-	for(int i; i=0; i<16; i++){
-		
-		for(int j; j=0; j<16; j++){
-				chess[i][j] = '-';
-		}
-	}
 	
 	return 0;
 }
