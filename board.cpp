@@ -4,8 +4,7 @@
 #include <time.h>
 
 using namespace std;
-int x;
-int y;
+
 
 class Board{
 	private:
@@ -45,16 +44,20 @@ class Board{
 		}
 		
 		void choice(){
+			int l, c;
 			cout << endl;
-			cout << "\nChoose x cord (1-8): ";
-			cin >> x;
-			cout << "Choose y cord (1-8): ";
-			cin >> y;
+			cout << "\nChoose x cord (1-8):" << endl;
+			cout << "> ";
+			cin >> l;
+			cout << "\nChoose y cord (1-8): " << endl;
+			cout << "> ";
+			cin >> c;
+			cout << endl;
 		}
 		
-		void reveal(){
+		void reveal(const int spaces[x][y]){
 			if(occupied[x][y]=false){
-				spaces[x][y]= "0";
+				spaces[x][y]=" ";
 				cout << spaces[x][y];
 			}
 			else{

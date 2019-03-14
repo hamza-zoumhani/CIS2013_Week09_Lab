@@ -13,7 +13,7 @@ int main(){
 	spaces.setup();
 	spaces.print();
 	spaces.choice();
-	spaces.reveal();
+	//spaces.reveal();
 	
 	
 	return 0;
